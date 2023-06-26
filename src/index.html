@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geologica:wght@200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;1,100&display=swap"
+        rel="stylesheet">
+    <title>Register Local</title>
+</head>
+
+<body>
+    <header>
+        <h1> Control<br> &nbsp; de Salida<br> &nbsp; &nbsp; de Libros</h1>
+    </header>
+
+    <main>
+        <h2>REGISTRO </h2>
+        <section class="main-section">
+            
+            <div class="register-container">
+                <div class="register-label">
+                    <label>Estudiante:</label>
+                    <label>Libro:</label>
+                    <label>Fecha de salida:</label>
+                    <label>Fecha de entrada:&nbsp;</label>
+                </div>
+
+                <form role="form" onsubmit="registro(event)" autocomplete="nope" class="form">
+                    <div>
+
+                        <input type="text" name="fname" id="fname" placeholder="Ingrese su nombre" required>
+                    </div>
+                    <div>
+
+                        <input type="text" name="lname" id="lname" placeholder="Ingrese el libro" required>
+                    </div>
+                    <div>
+
+                        <input type="date" name="email" id="email" required>
+                    </div>
+                    <div>
+
+                        <input type="date" name="pwd" id="passwrd" required>
+                    </div>
+                    <div>
+                        <button type="submit">Registrarse</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- <div>
+                <h2>
+                    <div id="data">
+
+                    </div>
+                </h2>
+            </div> -->
+            <article>
+                <section class="control-label">
+                    <label>Nombre</label>
+                    <label>Libro</label>
+                    <label>Fecha entrega</label>
+                    <label>Fecha salida</label>
+                </section>
+                <div class="pruebita" id="data"></div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

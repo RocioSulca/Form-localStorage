@@ -1,0 +1,61 @@
+header > h1 {
+    font-family: 'Geologica', sans-serif;
+    /* color: blue; */
+    font-weight: 600;
+    background: -webkit-linear-gradient(left top, #B0CC99, #FEC0A9);
+  background: linear-gradient(to bottom right, #B0CC99, #FEC0A9);
+  background-clip: text; 
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;  
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.register-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-label>label {
+    padding-top: 8px;
+}
+
+.register-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form>div {
+    padding-top: 5px;
+}
+
+.main-section {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.control-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pruebita {
+    display: flex;
+    flex-direction: column;
+}
+
+.probando {
+    background-color: aqua;
+}
+
+.control-prueba {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
