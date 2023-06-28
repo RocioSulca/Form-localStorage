@@ -16,13 +16,13 @@
 
 <body>
     <header>
-        <h1> Control<br> &nbsp; de Salida<br> &nbsp; &nbsp; de Libros</h1>
+        <h1> Control de<br> &nbsp; &nbsp;Salida de Libros</h1>
+        <!-- <h1>Control de salida de libros</h1> -->
     </header>
 
     <main>
-        <h2>REGISTRO </h2>
         <section class="main-section">
-            
+
             <div class="register-container">
                 <div class="register-label">
                     <label>Estudiante:</label>
@@ -33,42 +33,35 @@
 
                 <form role="form" onsubmit="registro(event)" autocomplete="nope" class="form">
                     <div>
-
                         <input type="text" name="fname" id="fname" placeholder="Ingrese su nombre" required>
                     </div>
                     <div>
-
                         <input type="text" name="lname" id="lname" placeholder="Ingrese el libro" required>
                     </div>
                     <div>
-
                         <input type="date" name="email" id="email" required>
                     </div>
                     <div>
-
                         <input type="date" name="pwd" id="passwrd" required>
                     </div>
-                    <div>
-                        <button type="submit">Registrarse</button>
+                    <div class="btn-container">
+                        <button class="btn" type="submit">Registrarse</button>
                     </div>
                 </form>
             </div>
-
-            <!-- <div>
-                <h2>
-                    <div id="data">
-
-                    </div>
-                </h2>
-            </div> -->
             <article>
-                <section class="control-label">
-                    <label>Nombre</label>
-                    <label>Libro</label>
-                    <label>Fecha entrega</label>
-                    <label>Fecha salida</label>
-                </section>
-                <div class="pruebita" id="data"></div>
+                <div class="detail-container">
+                    <div id="detalle-desktop" class="show-device-desktop">
+                        <section class="control-label">
+                            <span>Estudiante</span>
+                            <span>Libro</span>
+                            <span>Fecha de Salida</span>
+                            <span>Fecha de Entrada</span>
+                        </section>
+                    </div>
+                    <div class="show-device-mobile card-container" id="detalle-mobile">
+                    </div>
+                </div>
             </article>
         </section>
     </main>

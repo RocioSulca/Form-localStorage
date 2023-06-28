@@ -19,30 +19,8 @@ const registro = e => {
 
 function getData() {
     let { fname, lname, email, passwrd } = JSON.parse(localStorage.getItem("formData"));
-    const data = document.getElementById("data");
-    // data.innerHTML += `
-    // <table>
-    //     <tbody>
-    //         <tr>
-    //             <td class='probando'>Nombre</td>
-    //             <td>${fname}</td>
-    //         </tr>
-    //         <tr>
-    //             <td>Apellido</td>
-    //             <td>${lname}</td>
-    //         </tr>
-    //         <tr>
-    //             <td>Email</td>
-    //             <td>${email}</td>
-    //         </tr>
-    //         <tr>
-    //             <td>Contraseña</td>
-    //             <td>${passwrd}</td>
-    //         </tr>
-    //     </tbody>
-    // </table>
-    
-    // `;
+    const data = document.getElementById("detalle-desktop");
+    const dataMobile = document.getElementById("detalle-mobile");
     data.innerHTML += `
     <div class="control-prueba">
         <label>${fname}</label>
@@ -51,5 +29,24 @@ function getData() {
         <label>${passwrd}</label>
     </div>
     `;
+    dataMobile.innerHTML += `
+    <div class="card">
+        <div>
+            <label>Nombre:</label>
+            <span>${fname}</span>
+        </div>
+        <div>
+            <label>Libro:</label>
+            <span>${lname}</span>
+        </div>
+        <div>
+            <label>Fecha entrega:</label>
+            <span>${email}:</span>
+        </div>
+        <div>
+            <label>Fecha salida:</label>
+            <span>${passwrd}:</span>
+        </div>
+    </div>`;
 }
 
