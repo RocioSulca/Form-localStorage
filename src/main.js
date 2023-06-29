@@ -1,51 +1,50 @@
 const registro = e => {
     let formData = {
-        fname: document.getElementById('fname').value,
-        lname: document.getElementById('lname').value,
-        email: document.getElementById('email').value,
-        passwrd: document.getElementById('passwrd').value,
+        student: document.getElementById('student').value,
+        book: document.getElementById('book').value,
+        checkout: document.getElementById('checkout').value,
+        checkin: document.getElementById('checkin').value,
     }
 
     localStorage.setItem('formData', JSON.stringify(formData));
-    fname.value="";
-    lname.value="";
-    email.value="";
-    passwrd.value="";
+    student.value="";
+    book.value="";
+    checkout.value="";
+    checkin.value="";
     getData();
-    
     e.preventDefault();
 }
 
 
 function getData() {
-    let { fname, lname, email, passwrd } = JSON.parse(localStorage.getItem("formData"));
+    let { student, book, checkout, checkin } = JSON.parse(localStorage.getItem("formData"));
     const data = document.getElementById("detalle-desktop");
     const dataMobile = document.getElementById("detalle-mobile");
     data.innerHTML += `
     <div class="control-prueba">
-        <label>${fname}</label>
-        <label>${lname}</label>
-        <label>${email}</label>
-        <label>${passwrd}</label>
+        <label>${student}</label>
+        <label>${book}</label>
+        <label>${checkout}</label>
+        <label>${checkin}</label>
     </div>
     `;
     dataMobile.innerHTML += `
     <div class="card">
         <div>
-            <label>Nombre:</label>
-            <span>${fname}</span>
+            <label class="span-label">Nombre:</label>
+            <span>${student}</span>
         </div>
         <div>
-            <label>Libro:</label>
-            <span>${lname}</span>
+            <label class="span-label">Libro:</label>
+            <span>${book}</span>
         </div>
         <div>
-            <label>Fecha entrega:</label>
-            <span>${email}:</span>
+            <label class="span-label">Fecha entrega:</label>
+            <span>${checkout}:</span>
         </div>
         <div>
-            <label>Fecha salida:</label>
-            <span>${passwrd}:</span>
+            <label class="span-label">Fecha salida:</label>
+            <span>${checkin}:</span>
         </div>
     </div>`;
 }

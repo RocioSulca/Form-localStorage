@@ -1,12 +1,11 @@
 header > h1 {
     font-family: 'Geologica', sans-serif;
-    /* color: blue; */
     font-weight: 600;
     background: -webkit-linear-gradient(left top, #B0CC99, #FEC0A9);
-  background: linear-gradient(to bottom right, #B0CC99, #FEC0A9);
-  background-clip: text; 
-  -webkit-background-clip: text;  
-  -webkit-text-fill-color: transparent;  
+    background: linear-gradient(to bottom right, #B0CC99, #FEC0A9);
+    background-clip: text; 
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;  
 }
 
 header {
@@ -45,15 +44,6 @@ header {
     justify-content: space-around;
 }
 
-/* .pruebita {
-    display: flex;
-    flex-direction: column;
-} */
-
-.probando {
-    background-color: aqua;
-}
-
 .control-prueba {
     display: flex;
     flex-direction: row;
@@ -76,13 +66,10 @@ header {
     border-radius: 1em;
     margin: .5em;
 }
+
 .card-container{
     display: flex;
     flex-direction: column;
-}
-
-span {
-    font-weight: bold;
 }
 
 .detail-container {
@@ -107,14 +94,9 @@ span {
     padding: 20px !important;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
+.span-label {
+    font-size: large;
+    font-weight: bold;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -128,16 +110,4 @@ span {
     .show-device-mobile{
         display: none;
     }
-    
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
 }
