@@ -30,8 +30,8 @@
                     <label>Fecha de salida:</label>
                     <label>Fecha de entrada:&nbsp;</label>
                 </div>
-
-                <form role="form" onsubmit="registro(event)" autocomplete="nope" class="form">
+                <!-- onsubmit="registro(event)" -->
+                <form role="form"  autocomplete="nope" class="form">
                     <div>
                         <input type="text" name="student" id="student" placeholder="Ingrese su nombre" required>
                     </div>
@@ -44,13 +44,17 @@
                     <div>
                         <input type="date" name="pwd" id="checkin" required>
                     </div>
+                    <span id="input-vacio"></span>
                     <div class="btn-container">
-                        <button class="btn" type="submit">Registrarse</button>
+                        <button class="btn" id="btn-submit" type="submit">Registrarse</button>
+                        
                     </div>
                 </form>
             </div>
-            <article>
-                <div class="detail-container">
+            <article >
+                <div id="detail-container"></div>
+                <div id="detail-add-container"></div>
+                <!-- <div class="detail-container" >
                     <div id="detalle-desktop" class="show-device-desktop">
                         <section class="control-label">
                             <span class="span-label">Estudiante</span>
@@ -61,7 +65,7 @@
                     </div>
                     <div class="show-device-mobile card-container" id="detalle-mobile">
                     </div>
-                </div>
+                </div> -->
             </article>
         </section>
     </main>

@@ -99,12 +99,21 @@ header {
     font-weight: bold;
 }
 
+
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
     .show-device-desktop{
         display: flex;
         flex-direction: column;
+    }
+
+    article {
+        border: solid;
+        border-color: aquamarine;
+        border-radius: 5px;
+        min-height: 200px;
     }
     
     .show-device-mobile{
