@@ -22,15 +22,16 @@ const registro = e => {
 
 
 document.addEventListener("DOMContentLoaded", function () {
+    
     let datosPreCargados = JSON.parse(localStorage.getItem("formData"));
     if (datosPreCargados) {
         datosPreCargados.forEach(estudiante => {
             data.innerHTML += `
             <div class="control-prueba">
-            <label>${estudiante.student}</label>
-                <label>${estudiante.book}</label>
-                <label>${estudiante.checkout}</label>
-                <label>${estudiante.checkin}</label>
+                <label>Nombre: ${estudiante.student}</label>
+                <label>Libro: ${estudiante.book}</label>
+                <label>Fecha salida: ${estudiante.checkout}</label>
+                <label>Fecha entrada: ${estudiante.checkin}</label>
             </div>
         `;
         })
@@ -47,11 +48,11 @@ function getData() {
 
     pruebaContainer.innerHTML += `
         <div class="control-prueba">
-        <label>${student}</label>
-        <label>${book}</label>
-        <label>${checkout}</label>
-        <label>${checkin}</label>
-    </div>
+            <label>Nombre: ${student}</label>
+            <label>Libro: ${book}</label>
+            <label>Fecha salida: ${checkout}</label>
+            <label>Fecha entrada: ${checkin}</label>
+        </div>
     `;
 }
 

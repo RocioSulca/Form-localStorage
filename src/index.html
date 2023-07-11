@@ -16,57 +16,38 @@
 
 <body>
     <header>
-        <h1> Control de<br> &nbsp; &nbsp;Salida de Libros</h1>
-        <!-- <h1>Control de salida de libros</h1> -->
+        <h1>CONTROL DE SALIDA DE LIBROS</h1>
     </header>
 
     <main>
         <section class="main-section">
+            <div class="container">
+                <div class="register-container">
 
-            <div class="register-container">
-                <div class="register-label">
-                    <label>Estudiante:</label>
-                    <label>Libro:</label>
-                    <label>Fecha de salida:</label>
-                    <label>Fecha de entrada:&nbsp;</label>
-                </div>
-                <!-- onsubmit="registro(event)" -->
-                <form role="form"  autocomplete="nope" class="form">
-                    <div>
-                        <input type="text" name="student" id="student" placeholder="Ingrese su nombre" required>
-                    </div>
-                    <div>
+                    <h3>REGISTRO</h3>
+                    <form role="form" autocomplete="nope" class="form">
+
+                        <input type="text" name="student" id="student" placeholder="Ingrese el nombre" required>
+
                         <input type="text" name="book" id="book" placeholder="Ingrese el libro" required>
-                    </div>
-                    <div>
+
                         <input type="date" name="checkout" id="checkout" required>
-                    </div>
-                    <div>
+
                         <input type="date" name="pwd" id="checkin" required>
-                    </div>
-                    <span id="input-vacio"></span>
-                    <div class="btn-container">
-                        <button class="btn" id="btn-submit" type="submit">Registrarse</button>
-                        
-                    </div>
-                </form>
+
+                        <span id="input-vacio"></span>
+
+                        <input type="submit" value="REGISTRAR" class="btn" id="btn-submit">
+
+                    </form>
+
+                </div>
+
+                <article>
+                    <div id="detail-container" class="detail-container"></div>
+                    <div id="detail-add-container" class="detail-add-container"></div>
+                </article>
             </div>
-            <article >
-                <div id="detail-container"></div>
-                <div id="detail-add-container"></div>
-                <!-- <div class="detail-container" >
-                    <div id="detalle-desktop" class="show-device-desktop">
-                        <section class="control-label">
-                            <span class="span-label">Estudiante</span>
-                            <span class="span-label">Libro</span>
-                            <span class="span-label">Fecha de Salida</span>
-                            <span class="span-label">Fecha de Entrada</span>
-                        </section>
-                    </div>
-                    <div class="show-device-mobile card-container" id="detalle-mobile">
-                    </div>
-                </div> -->
-            </article>
         </section>
     </main>
 

@@ -1,11 +1,15 @@
+html {
+    height: 100%;
+    /* background: linear-gradient(135deg, #933DA5 20.48%, #278FD9 100%);    */
+    background-color: #876BBD;
+}
+
 header > h1 {
     font-family: 'Geologica', sans-serif;
-    font-weight: 600;
-    background: -webkit-linear-gradient(left top, #B0CC99, #FEC0A9);
-    background: linear-gradient(to bottom right, #B0CC99, #FEC0A9);
-    background-clip: text; 
-    -webkit-background-clip: text;  
-    -webkit-text-fill-color: transparent;  
+    font-weight: 500;
+    color: white;
+    font-size: 32px;
+    text-align: center;
 }
 
 header {
@@ -13,110 +17,125 @@ header {
     justify-content: center;
 }
 
-.register-label {
+.register-container {
+    /* border-radius: 10px;
+    background: linear-gradient(137deg, #A470BC 40.27%, #88C 70.31%, #6CA0DC 100%); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 90%; */
+}
+
+.control-prueba, .register-container{
+    border-radius: 10px;
+    background: linear-gradient(137deg, #A470BC 40.27%, #88C 70.31%, #6CA0DC 100%);
+    
+}
+
+.register-container > h3{
+    font-family: 'Geologica', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+form {
     display: flex;
     flex-direction: column;
 }
 
-.register-label>label {
-    padding-top: 8px;
+input {
+    border-radius: 15px;
+    background: #D9D9D9;
+    border: none;
+    padding: 4px 4px 4px 14px;
+    margin: 7px;
+    width: 218px;
+    color: #797777;
+    font-size: 16px;
 }
 
-.register-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.btn {
+    border-radius: 15px;
+    background: #46c9d3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 7px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    color: #D9D9D9;
 }
 
-.form>div {
-    padding-top: 5px;
+#input-vacio {
+    
+    text-align: center;
+    color: #d00000;;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 2px;
 }
 
 .main-section {
     display: flex;
-    flex-direction:column;
-    justify-content: space-between;
-}
-
-.control-label {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
 .control-prueba {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.show-device-desktop{
-    display: none;
-}
-
-.show-device-mobile{
-    display: flex;
-}
-
-.card{
-    display: flex;
     flex-direction: column;
-    background: aquamarine;
-    padding: 1em;
-    border-radius: 1em;
-    margin: .5em;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Geologica', sans-serif;
+    margin: 10px;
+    padding: 10px;
 }
 
-.card-container{
+.detail-container, .detail-add-container{
+    margin: 10px;
+}
+
+/* .container {
     display: flex;
+    justify-content: center;
     flex-direction: column;
+} */
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: #c8dd08;
+    }
+    input {
+        width: 350px;
+    }
 }
-
-.detail-container {
-    margin-top: 20px;
-}
-
-.btn {
-    background: rgb(6,14,131);
-    background: linear-gradient(0deg, rgba(254, 192, 169) 0%, rgba(176, 204, 153) 100%);
-    border: none;
-    padding: 7px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background: rgb(0,3,255);
-    background: linear-gradient(0deg, rgba(176, 204, 153) 0%, rgba(254, 192, 169) 100%);
-}
-
-.btn-container {
-    padding: 20px !important;
-}
-
-.span-label {
-    font-size: large;
-    font-weight: bold;
-}
-
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
-    .show-device-desktop{
-        display: flex;
-        flex-direction: column;
+    body {
+        background-color: #046822;
     }
-
-    article {
-        border: solid;
-        border-color: aquamarine;
-        border-radius: 5px;
-        min-height: 200px;
+    .register-container {
+        margin: 0% 15% 0% 15%;
     }
-    
-    .show-device-mobile{
-        display: none;
+    .detail-container, .detail-add-container{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: #1420ca;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: #ca17c1;
     }
 }
