@@ -94,19 +94,13 @@ input {
     margin: 10px;
 }
 
-/* .container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-} */
-
+.detail-table {
+    display: none;
+}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    body {
-        background-color: #c8dd08;
-    }
     input {
         width: 350px;
     }
@@ -114,28 +108,49 @@ input {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    body {
-        background-color: #046822;
+    .detail-table {
+        display: flex;
+    }
+    .detail-container, .detail-add-container {
+        display: none;
     }
     .register-container {
-        margin: 0% 15% 0% 15%;
+        margin: 0% 15%
     }
-    .detail-container, .detail-add-container{
-        display: grid;
-        grid-template-columns: auto auto;
+    input {
+        width: 400px;
+    }
+    .detail-table {
+        display: flex;
+    justify-content: center;
+    margin: 40px;
+
+    }
+    table {
+    width: 800px;
+    border-collapse: collapse;
+    /* overflow: hidden; */
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    th, td {
+        padding: 10px;
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+    font-family: 'Geologica', sans-serif;
+    }
+    th {
+        text-align: left;
+        font-size: 20px;
+        
+    }
+    
+    thead {
+        th {
+            background-color: #55608f;
+        }
+    }
+    td {
+        font-size: 16px;
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    body {
-        background-color: #1420ca;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    body {
-        background-color: #ca17c1;
-    }
-}

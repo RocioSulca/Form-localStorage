@@ -2,6 +2,7 @@ const btnSubmit = document.getElementById('btn-submit');
 const inputVacio = document.getElementById('input-vacio');
 const data = document.getElementById("detail-container");
 let pruebaContainer = document.getElementById('detail-add-container');
+let tableContainer = document.getElementById('table-container');
 
 const registro = e => {
     let formData = {
@@ -34,6 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 <label>Fecha entrada: ${estudiante.checkin}</label>
             </div>
         `;
+        tableContainer.innerHTML += `
+        <tr class="control-prueba-1">
+            <td> ${estudiante.student}</td>
+            <td> ${estudiante.book}</td>
+            <td> ${estudiante.checkout}</td>
+            <td> ${estudiante.checkin}</td>
+        </tr>
+    `;
         })
     }
 })
@@ -53,6 +62,14 @@ function getData() {
             <label>Fecha salida: ${checkout}</label>
             <label>Fecha entrada: ${checkin}</label>
         </div>
+    `;
+    tableContainer.innerHTML += `
+        <tr class="control-prueba-1">
+            <td> ${estudiante.student}</td>
+            <td> ${estudiante.book}</td>
+            <td> ${estudiante.checkout}</td>
+            <td> ${estudiante.checkin}</td>
+        </tr>
     `;
 }
 
