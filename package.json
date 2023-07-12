@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "serve src/",
-    "build": "serve src/"
+    "start": "serve public/",
+    "build": "serve public/"
   },
   "dependencies": {
     "serve": "^14.2.0"
