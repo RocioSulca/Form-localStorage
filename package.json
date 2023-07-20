@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf dist && mkdir dist && cp index.html dist/ && cp -R css dist/ && cp -R js dist/ && cp -R images dist/"
+    "build": "mkdir dist && cp -R public/* dist/"
   },
   "dependencies": {},
   "keywords": [],
